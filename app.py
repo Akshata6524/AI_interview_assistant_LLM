@@ -49,7 +49,7 @@ if st.button("Generate AI Response",type="Primary"):
         temperature = 0.7,
         max_tokens = 2000
       )
-      output=req.choices[0].message.content)
+      output=req.choices[0].message.content
       st.subheader("AI Response")
       st.markdown(output)
       st.download_button("Download Response",output,file_name= "Interview_Response.txt",mime="text/plain")
