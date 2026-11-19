@@ -29,7 +29,7 @@ if st.button("Generate AI Response",type="Primary"):
     st.warning("Please enter a valid Question and Answer")
     st.stop()
 
-  if mode == "Generate Questions':
+  if mode == "Generate Questions":
     task = "Generate"+ str(count)+" Frequently asked interview questions, 3 theory 2 senario questions .do not give me ans give me hint"
   elif mode == "Generate Code Questions":
     task = "Generate" + str(count) +" Frequently asked coding qustions on topic "+topic+"and give hints to solve them"
@@ -56,6 +56,7 @@ if st.button("Generate AI Response",type="Primary"):
     except Exception as e:
       st.error ("API connection was unsuccessful",e)
       st.info("Please check your API Key and rate limits")
+st.caption("Powered by Streamlit.io and GitHub. Using LLM API")
   
   
     
