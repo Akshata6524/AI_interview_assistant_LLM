@@ -20,9 +20,14 @@ if mode == 'Generate Questions':
 elif mode == 'Generate Code Questions':
   topic = st.selectbox('Topics',['SQL','AIML','Python','DAS','DBMS'])
   count = st.slider("Number of Questions",1,10,5)
-else:
+elif mode=='Evaluate Answers':
   question = st.text_area('Enter Interview Questions here')
   answer = st.text_area('Enter your answer',height=160)
+elif mode=='Improve Answer':
+  question = st.text_area('Enter your answer here')
+  answer = st.text_area('Improved Answer',height=160)
+  
+
 
   
                 
